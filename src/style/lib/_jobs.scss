@@ -1,0 +1,18 @@
+#jobs {
+  background: #fff;
+}
+
+#jobs:after {
+  content: '';
+  position: absolute;
+  border-top: 150px solid #fff;
+  border-right: 132vw solid transparent;
+  bottom: -130px;
+  z-index: 1;
+  left: 0;
+}
+
+#job_ {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}

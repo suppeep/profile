@@ -1,0 +1,29 @@
+  #addTo {
+    background: #fff;
+  }
+
+  #addTo:after {
+    content: '';
+    position: absolute;
+    border-top: 150px solid #fff;
+    border-right: 132vw solid transparent;
+    bottom: -130px;
+    z-index: 1;
+    left: 0;
+  }
+
+  .ex_card_img {
+    width: 500px;
+    height: 300px;
+  }
+
+  @media only screen and (max-width:735px) {
+    .ex_card_img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .subheading {
+    color: #fff !important;
+  }

@@ -1,0 +1,149 @@
+#addTo h1,
+#contact h1,
+#jobs h1,
+#passion h1,
+#home h1,
+#news h1,
+#me h1 {
+  margin-top: 40px;
+  padding: 13px;
+  width: 100%;
+  font-size: 68px;
+  line-height: 1.2593;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+#change_color h3,
+#news h3 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1;
+}
+
+
+#addTo p,
+#passion p,
+#jobs p,
+#news p,
+#me p {
+  display: inline-block;
+  width: 70%;
+  font-size: 23px;
+  line-height: 1.3478;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+#addTo h4,
+#jobs h4,
+#news h4,
+#passion h4,
+#news h4,
+#me h4 {
+  text-transform: uppercase;
+  margin-top: 140px;
+  margin-bottom: -70px;
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+
+@media only screen and (max-width: 1068px) {
+
+  #home h1,
+  #news h1,
+  #jobs h1,
+  #passion h1,
+  #addTo h1,
+  #me h1 {
+    padding: 30px;
+    width: 100%;
+    font-size: 56px;
+    line-height: 1.0714;
+    font-weight: 600;
+    letter-spacing: 0em;
+  }
+
+  #jobs h4,
+  #news h4,
+  #passion h4,
+  #addTo h4,
+  #me h4 {
+    text-transform: uppercase;
+    margin-top: 140px;
+    margin-bottom: -70px;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 400;
+    letter-spacing: 0em;
+  }
+
+  #jobs p,
+  #passion p,
+  #addTo p,
+  #news p,
+  #me p {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+}
+
+
+@media only screen and (max-width:735px) {
+
+  #home h1,
+  #passion h1,
+  #news h1,
+  #addTo h1,
+  #jobs h1,
+  #me h1 {
+    padding: 30px 8px 0 8px;
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+  }
+
+  #passion h4,
+  #news h4,
+  #addTo h4,
+  #jobs h4,
+  #me h4 {
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: -70px;
+    font-size: 24px;
+    line-height: 1.1666;
+    font-weight: 400;
+    letter-spacing: 0em;
+  }
+
+  #addTo p,
+  #news p,
+  #contact p,
+  #passion p,
+  #jobs p,
+  #me p {
+    font-size: 19px;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+}
+
+#job_,
+#passion_,
+#daily_tasks_ h3 {
+  font-size: 48.93px;
+  line-height: 1.0836;
+  color: #fff;
+  letter-spacing: 0em;
+  font-weight: 500;
+  text-align: left;
+  word-break: keep-all;
+}

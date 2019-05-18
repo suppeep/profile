@@ -1,0 +1,24 @@
+#news {
+  background: #fff;
+  /* fallback for old browsers */
+}
+
+#news:before {
+  content: '';
+  position: absolute;
+  border-bottom: 180px solid transparent;
+  border-left: 100vw solid transparent;
+  top: -180px;
+  left: 0;
+  z-index: 0;
+}
+
+#news:after {
+  content: '';
+  position: absolute;
+  border-top: 265px solid #fff;
+  border-right: 100vw solid transparent;
+  bottom: -265px;
+  z-index: 1;
+  left: 0;
+}

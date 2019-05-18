@@ -1,0 +1,168 @@
+{
+  "cards_1": {
+    "local": {
+      "needed": false,
+      "title": "Localized",
+      "hText": "",
+      "text": "I'm from Germany and life in a small town near Dortmund.",
+      "icon": "location_on",
+      "iconColor": {
+        "color": "#FF4081"
+      },
+      "cardStyle": {
+        "animated": "animated rubberBand"
+      }
+    },
+    "freetime": {
+      "needed": false,
+      "title": "My freetime",
+      "hText": "",
+      "text": "In my freetime I build modern web applications like pwa's & spa's.",
+      "icon": "local_movies",
+      "iconColor": {
+        "color": "#64FFDA"
+      },
+      "cardStyle": {
+        "animated": "animated rubberBand",
+        "transform": "scale(1.13)"
+      }
+    },
+    "born": {
+      "needed": false,
+      "title": "Born",
+      "hText": "",
+      "text": "I'm 18 years old and born in germany.",
+      "icon": "home",
+      "iconColor": {
+        "color": "#536DFE"
+      },
+      "cardStyle": {
+        "animated": "animated rubberBand"
+      }
+    }
+  },
+  "cards_2": {
+    "standart": {
+      "cardStyle": {
+        "animated": "animated rubberBand",
+        "backgroundColor": "transparent"
+      },
+      "needed": true,
+      "title": "HTML | CSS | JS",
+      "text": "I started with learning the basics of web-development since 2016. I have read posts, blogs and watched tutorials on youtube to learn every day more and more. HTML, CSS, and JS are the normal stuff I use in my daily turn.",
+      "icon": "fab fa-html5",
+      "iconStyle": {
+        "fontSize": "60.11px",
+        "color": "#E44D26"
+      },
+      "textColor": {
+        "color": "#3e396b",
+        "fontSize": "22px"
+      }
+    },
+    "vue": {
+      "cardStyle": {
+        "animated": "animated rubberBand",
+        "backgroundColor": "transparent"
+      },
+      "needed": true,
+      "title": "VUE JS",
+      "text": "After I learned the basics I started learning vuejs and experience a whole new way to learn javascript. This framework is a unique example of a beautiful perfection which is so fast and easy to learn. I created tons of websites with vuejs and I gained much experience.",
+      "icon": "fab fa-vuejs",
+      "iconStyle": {
+        "fontSize": "60.11px",
+        "color": "#41b883"
+      },
+      "textColor": {
+        "color": "#3e396b",
+        "fontSize": "22px"
+      }
+    },
+    "python": {
+      "cardStyle": {
+        "animated": "animated rubberBand",
+        "backgroundColor": "transparent"
+      },
+      "needed": true,
+      "title": "Python",
+      "text": "I am also interested in python to create backend stuff for the web but also for machine learning. I learned it from great youtubers but also with the use of vuejs.",
+      "icon": "fab fa-python",
+      "iconStyle": {
+        "fontSize": "60.11px",
+        "color": "#306998"
+      },
+      "textColor": {
+        "color": "#3e396b",
+        "fontSize": "22px"
+      }
+    },
+    "modern": {
+      "cardStyle": {
+        "animated": "animated rubberBand",
+        "backgroundColor": "transparent"
+      },
+      "needed": true,
+      "title": "Modern Stuff",
+      "text": "New technologies are also in my portfolio. Machine learning, face recognition, autonomous driving. Things like ML I do often with Tensorflow for the web with tensorflow.js but also with python on raspberry pi.",
+      "icon": "tag_faces",
+      "iconStyle": {
+        "fontSize": "60.11px",
+        "color": "#FDD835"
+      },
+      "textColor": {
+        "color": "#3e396b",
+        "fontSize": "22px"
+      }
+    }
+  },
+  "cards_3": {
+    "card1": {
+      "title": "IoT",
+      "text": "I have read a lot of articles all around IoT. By myself, I played a lot with Arduino and raspberry pi to create funny and useful examples to learn more and more.",
+      "icon": "fas fa-american-sign-language-interpreting",
+      "iconStyle": {
+        "fontSize": "42.11px",
+        "color": "#f50057"
+      },
+      "textColor": {
+        "color": "#3e396b",
+        "fontSize": "22px"
+      },
+      "cardStyle": {
+        "animated": "animated rubberBand"
+      }
+    },
+    "card2": {
+      "title": "Cryptocurrency",
+      "text": "To follow the newest trends is awesome. Everything is new and you can build it up from the ground. The technology behind the blockchain is great and to play with it makes a lot of fun.",
+      "icon": "fab fa-bitcoin",
+      "iconStyle": {
+        "fontSize": "42.11px",
+        "color": "#F7931A"
+      },
+      "textColor": {
+        "color": "#3e396b",
+        "fontSize": "22px"
+      },
+      "cardStyle": {
+        "animated": "animated rubberBand"
+      }
+    },
+    "card3": {
+      "title": "VUE JS",
+      "text": "To learn vuejs is for me a daily routine. It's not just a framework, vuejs is more like a peace in mind where I can let my workflow and can create new awesome stuff.",
+      "icon": "fab fa-vuejs",
+      "iconStyle": {
+        "fontSize": "42.11px",
+        "color": "#41b883"
+      },
+      "textColor": {
+        "color": "#3e396b",
+        "fontSize": "22px"
+      },
+      "cardStyle": {
+        "animated": "animated rubberBand"
+      }
+    }
+  }
+}
