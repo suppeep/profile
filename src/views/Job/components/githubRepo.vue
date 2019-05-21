@@ -4,15 +4,13 @@
       <v-list multi-line>
         <template>
           <v-list-tile avatar>
-            <v-list-tile-avatar v-if="show">
+            <v-list-tile-avatar>
               <img :src="item.owner.avatar_url">
             </v-list-tile-avatar>
             <v-list-tile-content>
               <v-list-tile-title>{{item.full_name}}</v-list-tile-title>
             </v-list-tile-content>
             <v-list-tile-action>
-              <!-- Place this tag where you want the button to render. -->
-              <!-- Place this tag where you want the button to render. -->
               <github-button
                 :href="item.url"
                 data-icon="octicon-star"
@@ -20,14 +18,11 @@
               >Star</github-button>
             </v-list-tile-action>
           </v-list-tile>
-          <v-textarea
-            v-if="show"
-            class="mx-3 my-3"
-            v-html="item.description"
-            readonly
-            box
-            label="Bio"
-          ></v-textarea>
+          <v-textarea class="mx-3 my-3" v-html="item.description" readonly box label="Bio"></v-textarea>
+          <div class="mx-3">
+            Demo:
+            <a :href="item.homepage" target="_blank">{{ item.homepage }}</a>
+          </div>
         </template>
       </v-list>
     </v-card>
@@ -36,7 +31,6 @@
 
 <script>
 import GithubButton from "vue-github-button";
-
 export default {
   name: "github-data",
   components: {
@@ -49,4 +43,3 @@ export default {
   }
 };
 </script>
-

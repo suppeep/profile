@@ -25,6 +25,7 @@ export const messages = {
       title: "That's me. <br> In person.",
       sub: 'My profile and ... so on',
       descr: 'Lukas Kreutzer',
+      skills: 'My skills',
       descr_sub: `I am 18 years old and live in the near of Dortmund, Germany. To be kind, myself and to think in another way are my strengths. Also, I try always to find a solution or a workaround does not matter how difficult it would be. Over the years I learned programming by myself and from online stuff, I really enjoyed it. Further experiences I have in vueJs, Firebase and the Google Cloud Platform. Most of my work I didn't upload because of some reasons, but in the future, I will release more and more projects to show the world my work.`,
     },
     job: {
@@ -136,7 +137,7 @@ export const messages = {
       Send us your CV and a motivation letter to`,
       link: 'luxiary@luxiary.app',
       meeting: 'We look forward to meeting you !',
-    }
+    },
   },
   de: {
     header: {
@@ -280,6 +281,6 @@ export const messages = {
       Send us your CV and a motivation letter to`,
       link: 'luxiary@luxiary.app',
       meeting: 'We look forward to meeting you !',
-    }
+    },
   },
 };

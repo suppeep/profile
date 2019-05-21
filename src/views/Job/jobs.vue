@@ -31,7 +31,7 @@
                     </p>
                   </v-card-text>
                 </v-card>
-                <!-- <github-repo :data="repoData" /> -->
+                <github-repo :data="repoData"/>
               </v-flex>
             </v-layout>
             <banner title="Read my latest news" route="news" text="News Feed"/>
@@ -46,7 +46,6 @@
 import banner from "../../components/Cards/components/banner";
 import githubRepo from "./components/githubRepo";
 import axios from "axios";
-
 export default {
   name: "job",
   components: {
@@ -58,18 +57,12 @@ export default {
       repoData: []
     };
   },
-  computed: {
-    allData() {
-      return this.userData;
-    }
-  },
   methods: {
     async getGithubRepo() {
       let data = await axios
         .get("https://api.github.com/users/masterDoomXII/repos")
         .then(response => {
-          console.log(response.data);
-          this.repoData.push(response.data);
+          this.repoData = response.data;
         })
         .catch(error => {
           console.log(error);
@@ -105,4 +98,3 @@ a {
   -webkit-text-fill-color: transparent;
 }
 </style>
-

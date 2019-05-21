@@ -25,6 +25,21 @@
                   <v-card-text>
                     <p class="text-xs-left white--text mt-4">{{ $t('me.descr_sub') }}</p>
                   </v-card-text>
+                  <v-card-text>
+                    <h3 class="mt-0 white--text display-1">{{ $t('me.skills') }}</h3>
+                    <div class="mt-3">
+                      <v-flex class="py-1" xs12 v-for="text in plus" :key="text.text">
+                        <span class="subheading">
+                          <v-icon
+                            style="line-height: 0.9"
+                            size="20"
+                            class="red--text text--accent-3"
+                          >add</v-icon>
+                          {{text}}
+                        </span>
+                      </v-flex>
+                    </div>
+                  </v-card-text>
                 </v-card>
                 <div class="mx-2">
                   <h3 class="mt-0 white--text display-1">Github profile</h3>
@@ -32,7 +47,7 @@
                 </div>
               </v-flex>
             </v-layout>
-            <banner title="See my latest works" route="job" text="My work"/>
+            <banner title="See my latest works" route="job" text="My works"/>
           </v-card>
         </v-flex>
       </v-layout>
@@ -53,7 +68,19 @@ export default {
   },
   data() {
     return {
-      userData: []
+      userData: [],
+      plus: [
+        "HTML | CSS | JS",
+        "VueJs | Vuex",
+        "Git",
+        "Github",
+        "NPM",
+        "Google Cloud Platform",
+        "Api integration (e.g Mapbox, google-maps, instagram)",
+        "Progressive Web App (Pwa)",
+        "Single page application (Spa)",
+        "..."
+      ]
     };
   },
   computed: {
