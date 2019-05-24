@@ -72,6 +72,8 @@ export default {
       plus: [
         "HTML | CSS | JS",
         "VueJs | Vuex",
+        "ES6",
+        "Typescript",
         "Git",
         "Github",
         "NPM",
@@ -79,6 +81,7 @@ export default {
         "Api integration (e.g Mapbox, google-maps, instagram)",
         "Progressive Web App (Pwa)",
         "Single page application (Spa)",
+        "Wordpress",
         "..."
       ]
     };

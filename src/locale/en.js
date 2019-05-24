@@ -6,7 +6,7 @@ export const messages = {
       passion: 'Passion',
       news: 'News Feed',
       job: 'Jobs',
-      addTo: 'Add to homescreen',
+      addTo: 'Add to homescreen'
     },
     home: {
       title: "It's me. <br> A web developer. <br> Specialized in frontend.",
@@ -146,7 +146,7 @@ export const messages = {
       passion: 'Leidenschanft',
       news: 'Neuigkeiten',
       job: 'Arbeiten',
-      addTo: 'Add to homescreen',
+      addTo: 'Add to homescreen'
     },
     home: {
       title: 'Das bin ich. <br> Ein Web-entwickler. <br> Spezialisiert in frontend.',

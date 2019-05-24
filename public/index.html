@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1,
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
       maximum-scale=1,
       user-scalable=yes, minimal-ui" />
-  <link disabled rel="icon" href="<%= BASE_URL %>logo.ico" />
-  <title>MasterDoomXII</title>
-  <meta name="Description" content="Landingpage pwa masterDoomXII Inc.">
-  <meta name="theme-color" content="#88ffc1" />
-  <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="referrer" content="no-referrer" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!-- new icon cdn for social icons footer -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-</head>
+    <link disabled rel="icon" href="<%= BASE_URL %>logo.ico" />
+    <title>MasterDoomXII</title>
+    <meta name="Description" content="Landingpage pwa masterDoomXII Inc.">
+    <meta name="theme-color" content="#88ffc1" />
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="referrer" content="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <!-- new icon cdn for social icons footer -->
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous" />
+  </head>
 
-<body>
-  <noscript>
-    <strong>We're sorry but pwa doesn't work properly without
-      JavaScript
-      enabled. Please enable it to continue.</strong>
-  </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
-  <script type="text/javascript">
-    (function (w, d) {
-      var loader = function () {
-        var s = d.createElement("script"),
-          tag = d.getElementsByTagName("script")[0];
-        s.src = "https://cdn.iubenda.com/iubenda.js";
-        tag.parentNode.insertBefore(s, tag);
-      };
-      if (w.addEventListener) {
-        w.addEventListener("load", loader, false);
-      } else if (w.attachEvent) {
-        w.attachEvent("onload", loader);
-      } else {
-        w.onload = loader;
-      }
-    })(window, document);
-  </script>
-</body>
+  <body>
+    <noscript>
+      <strong>We're sorry but pwa doesn't work properly without
+        JavaScript
+        enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 
 </html>

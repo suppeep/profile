@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0-rc.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "@mdi/font": "^2.6.95",
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",

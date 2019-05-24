@@ -5,7 +5,7 @@
       "title": "Localized",
       "hText": "",
       "text": "I'm from Germany and life in a small town near Dortmund.",
-      "icon": "location_on",
+      "icon": "fas fa-map-marker",
       "iconColor": {
         "color": "#FF4081"
       },
@@ -18,7 +18,7 @@
       "title": "My freetime",
       "hText": "",
       "text": "In my freetime I build modern web applications like pwa's & spa's.",
-      "icon": "local_movies",
+      "icon": "fas fa-receipt",
       "iconColor": {
         "color": "#64FFDA"
       },
@@ -32,7 +32,7 @@
       "title": "Born",
       "hText": "",
       "text": "I'm 18 years old and born in germany.",
-      "icon": "home",
+      "icon": "fas fa-home",
       "iconColor": {
         "color": "#536DFE"
       },
@@ -104,7 +104,7 @@
       "needed": true,
       "title": "Modern Stuff",
       "text": "New technologies are also in my portfolio. Machine learning, face recognition, autonomous driving. Things like ML I do often with Tensorflow for the web with tensorflow.js but also with python on raspberry pi.",
-      "icon": "tag_faces",
+      "icon": "far fa-smile-wink",
       "iconStyle": {
         "fontSize": "60.11px",
         "color": "#FDD835"

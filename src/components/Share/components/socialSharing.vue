@@ -7,7 +7,7 @@
       description="Intuitive, Fast and Composable landingpage."
       quote="MasterDoomXII profile page"
       hashtags="#masterDoomXII #pwa #vueJs #developer"
-      twitter-user="pictureplace"
+      twitter-user="masterDoomXII"
       inline-template
     >
       <div>

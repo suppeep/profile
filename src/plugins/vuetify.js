@@ -1,16 +1,12 @@
-import Vue from 'vue'
-import Vuetify, {
-  VBtn,
-  VIcon,
-  VSpeedDial
-} from 'vuetify/lib'
-import 'vuetify/src/stylus/app.styl'
+import Vue from 'vue';
+import Vuetify, {VBtn, VIcon, VSpeedDial} from 'vuetify/lib';
+import 'vuetify/src/stylus/app.styl';
 
-Vue.use(Vuetify, {
+Vue.use (Vuetify, {
   components: {
     VBtn,
     VIcon,
-    VSpeedDial
+    VSpeedDial,
   },
   theme: {
     primary: '#ee44aa',
@@ -20,9 +16,9 @@ Vue.use(Vuetify, {
     info: '#2196F3',
     success: '#4CAF50',
     warning: '#FFC107',
-    my_own: '#88ffc1',
-    passion_c: '#f6c180'
+    my_own: '#00fbbd',
+    passion_c: '#f6c180',
   },
   customProperties: true,
   iconfont: 'mdi',
-})
+});

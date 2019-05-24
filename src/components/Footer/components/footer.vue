@@ -23,7 +23,7 @@
       <v-card-text class="white--text subheading">
         &copy;MasterDoomXII |
         <a
-          href="https://www.iubenda.com/privacy-policy/27631485"
+          href="https://www.freeprivacypolicy.com/privacy/view/6923c3f1e35306b1b30018fd398f2d0f"
           class="black--text"
           title="Privacy Policy "
         >Privacy Policy</a>
