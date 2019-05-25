@@ -12,7 +12,7 @@
             </v-list-tile-content>
             <v-list-tile-action>
               <github-button
-                :href="item.url"
+                :href="item.html_url"
                 data-icon="octicon-star"
                 aria-label="Star ntkme/github-buttons on GitHub"
               >Star</github-button>
