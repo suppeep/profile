@@ -1,7 +1,7 @@
 <template>
   <div id="scroll" @click="$vuetify.goTo(target, options)">
     <span class="arrow-bounce">
-      <v-icon class="primary--text">keyboard_arrow_down</v-icon>
+      <v-icon class="primary--text pb-3">fas fa-sort-down</v-icon>
     </span>
   </div>
 </template>
@@ -15,10 +15,10 @@ export default {
       required: true
     }
   },
-  data () {
+  data() {
     return {
       offset: -150
-    }
+    };
   },
   computed: {
     options() {

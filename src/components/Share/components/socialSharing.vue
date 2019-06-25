@@ -14,8 +14,8 @@
         <v-speed-dial v-model="fab" class="fab-btn">
           <template v-slot:activator>
             <v-btn v-model="fab" class="pink" dark fab>
-              <v-icon>share</v-icon>
-              <v-icon>close</v-icon>
+              <v-icon>fas fa-share-alt</v-icon>
+              <v-icon>fas fa-times</v-icon>
             </v-btn>
           </template>
           <v-btn fab dark small class="facebook-color">

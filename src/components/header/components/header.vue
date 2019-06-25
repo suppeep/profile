@@ -16,7 +16,7 @@
         </template>
         <v-layout row>
           <v-flex xs3>
-            <v-icon right class="my-2">language</v-icon>
+            <v-icon right class="my-2">fas fa-globe-americas</v-icon>
           </v-flex>
           <v-flex xs9>
             <select v-model="$i18n.locale">
@@ -72,21 +72,25 @@ export default {
     l_items() {
       return {
         items: [
-          { icon: "home", title: this.$t("header.home"), name: "home" },
-          { icon: "person", title: this.$t("header.me"), name: "me" },
-          { icon: "work", title: this.$t("header.job"), name: "job" },
+          { icon: "fas fa-home", title: this.$t("header.home"), name: "home" },
+          { icon: "fas fa-user-tag", title: this.$t("header.me"), name: "me" },
           {
-            icon: "favorite",
+            icon: "fas fa-briefcase",
+            title: this.$t("header.job"),
+            name: "job"
+          },
+          {
+            icon: "fas fa-heart",
             title: this.$t("header.passion"),
             name: "passion"
           },
           {
-            icon: "fiber_new",
+            icon: "fas fa-newspaper",
             title: this.$t("header.news"),
             name: "news"
           },
           {
-            icon: "add_to_home_screen",
+            icon: "far fa-id-badge",
             title: this.$t("header.addTo"),
             name: "addTo"
           }

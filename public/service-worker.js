@@ -2,7 +2,7 @@ if (workbox) {
   console.log(`Workbox is loaded`);
 
   workbox.setConfig({
-    debug: false,
+    debug: true,
   });
 
   workbox.core.setCacheNameDetails({
@@ -42,7 +42,7 @@ if (workbox) {
   // if the network request is taking too long.
   workbox.routing.registerRoute(
     new RegExp('https://master-doomxii.web.app'),
-    workbox.strategies.networkFirst({
+    workbox.strategies.cacheFirst({
       cacheName: 'api',
       networkTimeoutSeconds: 3,
       plugins: [

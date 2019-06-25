@@ -33,8 +33,8 @@
                           <v-icon
                             style="line-height: 0.9"
                             size="20"
-                            class="red--text text--accent-3"
-                          >add</v-icon>
+                            class="red--text text--accent-3 mr-1"
+                          >fas fa-plus</v-icon>
                           {{text}}
                         </span>
                       </v-flex>
