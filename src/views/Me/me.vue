@@ -43,11 +43,11 @@
                 </v-card>
                 <div class="mx-2">
                   <h3 class="mt-0 white--text display-1">Github profile</h3>
-                  <github-data class="ma-2" :data="userData"/>
+                  <github-data class="ma-2" :data="userData" />
                 </div>
               </v-flex>
             </v-layout>
-            <banner title="See my latest works" route="job" text="My works"/>
+            <banner title="See my latest works" route="job" text="My work" />
           </v-card>
         </v-flex>
       </v-layout>
@@ -71,13 +71,18 @@ export default {
       userData: [],
       plus: [
         "HTML | CSS | JS",
-        "VueJs | Vuex",
         "ES6",
+        "Nodejs",
         "Typescript",
+        "VueJs | Vuex",
+        "Vuetifyjs",
+        "Nuxtjs",
         "Git",
         "Github",
+        "Gitlab",
         "NPM",
         "Google Cloud Platform",
+        "Firebase",
         "Api integration (e.g Mapbox, google-maps, instagram)",
         "Progressive Web App (Pwa)",
         "Single page application (Spa)",
@@ -95,11 +100,11 @@ export default {
     async getGithubData() {
       let data = await axios
         .get("https://api.github.com/users/masterDoomXII")
-        .then(response => {
-          this.userData.push(response.data);
+        .then(res => {
+          this.userData.push(res.data);
         })
-        .catch(error => {
-          console.log(error);
+        .catch(err => {
+          // console.log(err);
         });
     }
   },
@@ -117,13 +122,13 @@ a {
   background: #eecda3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right bottom,
-    #a7ffeb,
-    #a770ef
+    #081B33,
+    #0c0c0d
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right bottom,
-    #a7ffeb,
-    #a770ef
+    #081B33,
+    #0c0c0d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .color-me-text {

@@ -15,7 +15,7 @@
 
       <v-layout row wrap>
         <v-flex xs12>
-          <v-card flat class="text-xs-left passion_c color-passion">
+          <v-card dark flat class="text-xs-left passion_c color-passion">
             <v-layout row wrap>
               <v-flex xl4 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card
@@ -58,7 +58,7 @@
                 </v-timeline>
               </v-flex>
             </template>
-            <banner title="Read my News Feed" route="news" text="News Feed"/>
+            <banner style="background: #fff" title="See my latest works" route="job" text="My work" />
           </v-card>
         </v-flex>
       </v-layout>
@@ -84,13 +84,13 @@ export default {
   background: #ffefba !important; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right bottom,
-    #ffefba,
-    #ffe387
+    #081B33,
+    #0c0c0d
   ) !important; /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right bottom,
-    #ffefba,
-    #ffe387
+    #081B33,
+    #0c0c0d
   ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .color-passion-text {

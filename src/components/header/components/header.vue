@@ -39,7 +39,7 @@
       <v-layout align-center justify-center row fill-height>
         <v-flex xs12>
           <router-link :to="{ name: 'home', params: { locale: 'en' } }">
-            <div class="logo-masterdoom my_own--text">MasterDoomXII</div>
+            <div class="logo-masterdoom my_own--text">Lukas Kreutzer</div>
             <v-img class="logo_h" src="../../../../public/img/icons/icon-512x512.png" alt/>
           </router-link>
         </v-flex>
@@ -83,11 +83,6 @@ export default {
             icon: "fas fa-heart",
             title: this.$t("header.passion"),
             name: "passion"
-          },
-          {
-            icon: "fas fa-newspaper",
-            title: this.$t("header.news"),
-            name: "news"
           },
           {
             icon: "far fa-id-badge",

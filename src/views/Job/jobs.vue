@@ -34,7 +34,7 @@
                 <github-repo :data="repoData"/>
               </v-flex>
             </v-layout>
-            <banner title="Read my latest news" route="news" text="News Feed"/>
+            <banner title="Read details about me" route="me" text="Me"/>
           </v-card>
         </v-flex>
       </v-layout>
@@ -60,12 +60,12 @@ export default {
   methods: {
     async getGithubRepo() {
       let data = await axios
-        .get("https://api.github.com/users/masterDoomXII/repos")
+        .get("https://api.github.com/users/suppeep/repos")
         .then(response => {
           this.repoData = response.data;
         })
         .catch(error => {
-          console.log(error);
+          // console.log(error);
         });
     }
   },
@@ -83,13 +83,13 @@ a {
   background: #4568dc; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right bottom,
-    #b06ab3,
-    #4568dc
+    #081B33,
+    #0c0c0d
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right bottom,
-    #b06ab3,
-    #4568dc
+    #081B33,
+    #0c0c0d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .jobs-color-text {

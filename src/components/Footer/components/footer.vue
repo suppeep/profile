@@ -21,7 +21,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text subheading">
-        &copy;MasterDoomXII |
+        &copy;Lukas Kreutzer |
         <a
           href="https://www.freeprivacypolicy.com/privacy/view/6923c3f1e35306b1b30018fd398f2d0f"
           class="black--text"
@@ -37,10 +37,10 @@
 export default {
   data: () => ({
     icons: [
-      { icon: "fab fa-facebook", link: "https://facebook.com" },
-      { icon: "fab fa-twitter", link: "https://twitter.com" },
-      { icon: "fab fa-instagram", link: "https://instagram.com" },
-      { icon: "fab fa-github", link: "https://github.com/masterDoomXII" }
+      // { icon: "fab fa-facebook", link: "https://facebook.com" },
+      // { icon: "fab fa-twitter", link: "https://twitter.com" },
+      // { icon: "fab fa-instagram", link: "https://instagram.com" },
+      { icon: "fab fa-github", link: "https://github.com/suppeep/" }
     ]
   })
 };

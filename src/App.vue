@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <nav-header v-model="openTab"/>
+    <nav-header v-model="openTab" />
     <l-snack-bar
       :color="txtColor"
       :snackColor="snackColor"
@@ -12,9 +12,9 @@
       :snackBtnText="snackBtnText"
     />
     <v-content>
-      <router-view v-transition @after-leave="afterLeave"/>
+      <router-view v-transition @after-leave="afterLeave" />
     </v-content>
-    <app-footer/>
+    <app-footer />
     <social-sharing></social-sharing>
   </v-app>
 </template>
@@ -52,7 +52,7 @@ export default {
       if (this.refreshing) return;
       this.refreshing = true;
       window.location.reload();
-      console.log("file is running");
+      // console.log("file is running");
     });
   },
   methods: {

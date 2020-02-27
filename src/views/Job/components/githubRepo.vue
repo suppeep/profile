@@ -1,6 +1,6 @@
 <template>
   <v-flex xs12>
-    <v-card v-for="item in data" :key="item.id" class="pb-5" light flat>
+    <v-card v-for="item in data" :key="item.id" class="pb-5 ma-2" light flat>
       <v-list multi-line>
         <template>
           <v-list-tile avatar>
@@ -19,10 +19,10 @@
             </v-list-tile-action>
           </v-list-tile>
           <v-textarea class="mx-3 my-3" v-html="item.description" readonly box label="Bio"></v-textarea>
-          <div class="mx-3">
+          <!-- <div class="mx-3">
             Demo:
             <a :href="item.homepage" target="_blank">{{ item.homepage }}</a>
-          </div>
+          </div> -->
         </template>
       </v-list>
     </v-card>
