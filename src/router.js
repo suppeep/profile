@@ -107,7 +107,7 @@ const router = new Router({
                     name: "home",
                     component: world,
                     meta: {
-                        title: "Home | MasterDoomXII"
+                        title: "Home | lukas-kreutzer"
                     }
                 },
                 {
@@ -115,7 +115,7 @@ const router = new Router({
                     name: "me",
                     component: me,
                     meta: {
-                        title: "Explore | MasterDoomXII"
+                        title: "Explore | lukas-kreutzer"
                     }
                 },
                 {
@@ -123,7 +123,7 @@ const router = new Router({
                     name: "job",
                     component: job,
                     meta: {
-                        title: "Jobs | MasterDoomXII"
+                        title: "Jobs | lukas-kreutzer"
                     }
                 },
                 {
@@ -131,7 +131,7 @@ const router = new Router({
                     name: "addTo",
                     component: addTo,
                     meta: {
-                        title: "Add to homescreen | MasterDoomXII"
+                        title: "Add to homescreen | lukas-kreutzer"
                     }
                 },
                 {
@@ -139,7 +139,7 @@ const router = new Router({
                     name: "passion",
                     component: passion,
                     meta: {
-                        title: "Passion | MasterDoomXII"
+                        title: "Passion | lukas-kreutzer"
                     }
                 },
                 {

@@ -2,12 +2,12 @@
   <div>
     <social-sharing
       class="white social-card"
-      url="https://master-doomxii.web.app/"
-      title="It's me MasterDoomXII."
+      url="https://lukas-kreutzer.web.app/"
+      title="It's me Lukas Kreutzer."
       description="Intuitive, Fast and Composable landingpage."
-      quote="MasterDoomXII profile page"
-      hashtags="#masterDoomXII #pwa #vueJs #developer"
-      twitter-user="masterDoomXII"
+      quote="lukas-kreutzer profile page"
+      hashtags="#lukas-kreutzer #pwa #vueJs #developer"
+      twitter-user="lukas-kreutzer"
       inline-template
     >
       <div>
