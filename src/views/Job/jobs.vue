@@ -25,7 +25,7 @@
                   <v-card-text>
                     <p class="text-xs-left white--text mt-4">
                       {{ $t('job.descr_sub') }}
-                      <a style="color: #286d6a" v-html="$t('job.link')"></a>.
+                      <a v-html="$t('job.link')"></a>.
                       <br>
                       {{ $t('job.meeting') }}
                     </p>
@@ -77,7 +77,7 @@ export default {
 
 <style>
 a {
-  color: #212121;
+  color: #FFCE6D;
 }
 .jobs-color {
   background: #4568dc; /* fallback for old browsers */

@@ -19,19 +19,19 @@
             <v-layout align-center justify-center row fill-height>
               <v-flex xl12 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card-text>
-                  <p v-html="$t('addTo.card1.title')" class="text-xs-left"></p>
+                  <p v-html="$t('addTo.card1.title')" class="text-xs-left white--text"></p>
                 </v-card-text>
                 <v-card-text>
                   <div class="subheading">
                     {{ $t('addTo.card1.step._1') }}
-                    <br>
+                    <br />
                     <li v-html="$t('addTo.card1.step._2')"></li>
                     {{ $t('addTo.card1.step._3') }}
-                    <br>
+                    <br />
                     {{ $t('addTo.card1.step._4') }}
-                    <br>
+                    <br />
                     {{ $t('addTo.card1.step._5') }}
-                    <br>
+                    <br />
                     {{ $t('addTo.card1.step._6') }}
                   </div>
                 </v-card-text>
@@ -41,7 +41,7 @@
             <v-layout align-center justify-center row fill-height>
               <v-flex xl12 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card-text class="mt-5">
-                  <p class="text-xs-left">
+                  <p class="text-xs-left white--text">
                     How to Bookmark to Home Screen at
                     <mark>iOS:</mark>
                   </p>
@@ -49,14 +49,14 @@
                 <v-card-text>
                   <div class="subheading">
                     {{ $t('addTo.card1.step._1') }}
-                    <br>
+                    <br />
                     <li v-html="$t('addTo.card1.step._2')"></li>
                     {{ $t('addTo.card2.step._3') }}
-                    <br>
+                    <br />
                     {{ $t('addTo.card2.step._4') }}
-                    <br>
+                    <br />
                     {{ $t('addTo.card2.step._5') }}
-                    <br>
+                    <br />
                     {{ $t('addTo.card2.step._6') }}
                   </div>
                 </v-card-text>
@@ -66,7 +66,7 @@
             <v-layout class="p_b" align-center justify-center row fill-height>
               <v-flex xl12 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card-text class="mt-5">
-                  <p class="text-xs-left">
+                  <p class="text-xs-left white--text">
                     How to Bookmark to Home Screen at
                     <mark>Firefox:</mark>
                   </p>
@@ -74,19 +74,19 @@
                 <v-card-text>
                   <div class="subheading">
                     {{ $t('addTo.card1.step._1') }}
-                    <br>
+                    <br />
                     <li v-html="$t('addTo.card1.step._2')"></li>
                     {{ $t('addTo.card3.step._3') }}
-                    <br>
+                    <br />
                     {{ $t('addTo.card3.step._4') }}
-                    <br>
+                    <br />
                     {{ $t('addTo.card3.step._5') }}
                   </div>
                 </v-card-text>
               </v-flex>
               <v-flex v-if="onMobile" xs12 md1></v-flex>
             </v-layout>
-            <banner title="See my latest works" route="job" text="My work"/>
+            <banner title="See my latest works" route="job" text="My work" />
           </v-card>
         </v-flex>
       </v-layout>
@@ -142,12 +142,12 @@ li {
   background: #e1eec3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right bottom,
-   #081B33,
+    #081b33,
     #0c0c0d
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right bottom,
-    #081B33,
+    #081b33,
     #0c0c0d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

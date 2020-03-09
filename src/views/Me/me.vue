@@ -45,6 +45,10 @@
                   <h3 class="mt-0 white--text display-1">Github profile</h3>
                   <github-data class="ma-2" :data="userData" />
                 </div>
+                <div class="mx-2 my-5">
+                  <h3 class="mt-0 white--text display-1">LinkedIn</h3>
+                  <a class="my_own--text" href="https://www.linkedin.com/in/luaks52523/">Lukas Kreutzer</a>
+                </div>
               </v-flex>
             </v-layout>
             <banner title="See my latest works" route="job" text="My work" />
@@ -99,7 +103,7 @@ export default {
   methods: {
     async getGithubData() {
       let data = await axios
-        .get("https://api.github.com/users/masterDoomXII")
+        .get("https://api.github.com/users/suppeep")
         .then(res => {
           this.userData.push(res.data);
         })
