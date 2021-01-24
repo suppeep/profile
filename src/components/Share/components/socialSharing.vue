@@ -10,7 +10,7 @@
       twitter-user="lukas-kreutzer"
       inline-template
     >
-      <div>
+      <div class="transparent">
         <v-speed-dial v-model="fab" class="fab-btn">
           <template v-slot:activator>
             <v-btn v-model="fab" class="pink" dark fab>
@@ -57,8 +57,8 @@
 <script>
 export default {
   data: () => ({
-    fab: false
-  })
+    fab: false,
+  }),
 };
 </script>
 
