@@ -1,6 +1,6 @@
 <template>
-  <v-footer dark height="auto">
-    <v-card width="100%" flat tile class="my_own white--text text-xs-center">
+  <v-footer class="my_own" height="auto">
+    <v-card width="100%" flat tile dark class="my_own text-center">
       <v-card-text>
         <v-btn
           :href="icon.link"
@@ -24,7 +24,7 @@
         &copy;Lukas Kreutzer |
         <a
           href="https://www.freeprivacypolicy.com/privacy/view/6923c3f1e35306b1b30018fd398f2d0f"
-          class="black--text"
+          class="white--text"
           title="Privacy Policy "
         >Privacy Policy</a>
       </v-card-text>

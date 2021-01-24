@@ -7,11 +7,11 @@
         </icon-anima>
       </v-card-text>
     </v-flex>
-    <v-card-text>
-      <h5 v-if="needed" class="mt-4 pa-0 mb-0">
+    <v-card-text class="text-center">
+      <h5 v-if="needed" class="mt-6 pa-0 mb-0">
         <b :style="textColor">{{ title }}</b>
       </h5>
-      <h5 v-else>
+      <h5 v-else class="mt-1">
         <b style="color: #30323d; font-size: 22px; font-weight: 400;">
           {{ mtext }}
           <mark :style="iconStyle" class="transparent">{{ hText }}</mark>

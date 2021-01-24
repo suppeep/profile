@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap>
     <v-flex xs12 class="pa-0">
-      <v-card id="jobs" flat class="text-xs-center mb-3">
+      <v-card id="jobs" flat class="text-center mb-3">
         <v-card-text>
           <h4>{{ $t('job.head') }}</h4>
         </v-card-text>
@@ -15,7 +15,7 @@
 
       <v-layout row wrap>
         <v-flex xs12>
-          <v-card flat class="text-xs-left jobs-color">
+          <v-card flat class="text-left jobs-color">
             <v-layout row wrap>
               <v-flex xl4 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card class="transparent" id="job_" flat>
@@ -23,9 +23,9 @@
                     <h3 class="mt-0 display-1">{{ $t('job.descr') }}</h3>
                   </v-card-text>
                   <v-card-text>
-                    <p class="text-xs-left white--text mt-4">
+                    <p class="text-left white--text mt-4">
                       {{ $t('job.descr_sub') }}
-                      <a v-html="$t('job.link')"></a>.
+                      <a class="my_own--text" v-html="$t('job.link')"></a>.
                       <br>
                       {{ $t('job.meeting') }}
                     </p>
@@ -34,7 +34,7 @@
                 <github-repo :data="repoData"/>
               </v-flex>
             </v-layout>
-            <banner title="Read details about me" route="me" text="Me"/>
+            <banner style="margin-bottom: 40px" title="Read details about me" route="me" text="Me"/>
           </v-card>
         </v-flex>
       </v-layout>
@@ -43,9 +43,10 @@
 </template>
 
 <script>
-import banner from "../../components/Cards/components/banner";
+import banner from "@/components/Cards/components/banner";
 import githubRepo from "./components/githubRepo";
 import axios from "axios";
+
 export default {
   name: "job",
   components: {

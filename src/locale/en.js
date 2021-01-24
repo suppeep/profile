@@ -26,7 +26,7 @@ export const messages = {
             sub: "My profile and ... so on",
             descr: "Lukas Kreutzer",
             skills: "My skills",
-            descr_sub: `I am 19 years old and live in the near of Dortmund, Germany. To be kind, myself and to think in another way are my strengths. Also, I try always to find a solution or a workaround does not matter how difficult it would be. Over the years I learned programming by myself and from online stuff, I really enjoyed it. Further experiences I have in vueJs, Firebase and the Google Cloud Platform. Most of my work I didn't upload because of some reasons, but in the future, I will release more and more projects to show the world my work.`
+            descr_sub: `I am 20 years old and live in the near of Dortmund, Germany. To be kind, myself and to think in another way are my strengths. Also, I try always to find a solution or a workaround does not matter how difficult it would be. Over the years I learned programming by myself and from online stuff, I really enjoyed it. Further experiences I have in vueJs, Firebase and the Google Cloud Platform. Most of my work I didn't upload because of some reasons, but in the future, I will release more and more projects to show the world my work.`
         },
         job: {
             head: "-Jobs-",
@@ -36,8 +36,8 @@ export const messages = {
             descr_sub: `Technology, design, ideas, media, you name it.
       Do you believe in me?
       Send me your job details to`,
-            link: `<br><a href="mailto:lukas-kreutzer101@gmail.com" target="_blank">
-            lukas-kreutzer101@gmail.com</a>`,
+            link: `<br><a href="mailto:lukas.kreutzer101@gmail.com" target="_blank">
+            lukas.kreutzer101@gmail.com</a>`,
             meeting: "I look forward to meeting you !"
         },
         passion: {
@@ -46,7 +46,7 @@ export const messages = {
             sub: "I reached a goal but the next is waiting.",
             descr: "I have embarked on one of the most exciting adventures for the digital world and I're looking for talented and passionate people to sail with me!",
             descr_sub: "",
-            link: "lukas-kreutzer101@gmail.com",
+            link: "lukas.kreutzer101@gmail.com",
             years: [{
                     title: "Learn more and more",
                     text: "After 4 years of hard work, I am still hungry to learn much more.",
@@ -155,8 +155,8 @@ export const messages = {
             descr_sub: `Technology, design, marketing, finance, media, you name it.
       Do you believe in me?
       Send me your job details and a motivation letter to`,
-            link: `<a href="mailto:lukas-kreutzer101@gmail.com" target="_blank">
-        lukas-kreutzer101@gmail.com
+            link: `<a href="mailto:lukas.kreutzer101@gmail.com" target="_blank">
+        lukas.kreutzer101@gmail.com
       </a>
       `,
             meeting: "I look forward to meeting you !"
@@ -167,8 +167,8 @@ export const messages = {
             sub: "Alle Projekte die ich abgeschlossen habe.",
             descr: "Meine Projekte.",
             descr_sub: `Technologie, Design, Ideen, Medien, Sie nennen es. Glauben Sie an mich? Senden Sie mir Ihre Jobdetails an`,
-            link: `<a href="mailto:lukas-kreutzer101@gmail.com" target="_blank">
-        lukas-kreutzer101@gmail.com
+            link: `<a href="mailto:lukas.kreutzer101@gmail.com" target="_blank">
+        lukas.kreutzer101@gmail.com
       </a>
       `,
             meeting: "Ich freue mich, Sie kennen zu lernen !"
@@ -179,7 +179,7 @@ export const messages = {
             sub: "I reached a goal but the next is waiting.",
             descr: "I have embarked on one of the most exciting adventures for the digital world and I're looking for talented and passionate people to sail with me!",
             descr_sub: "",
-            link: "lukas-kreutzer101@gmail.com",
+            link: "lukas.kreutzer101@gmail.com",
             years: [{
                     title: "Learn more and more",
                     text: "After 4 years of hard work, I am still hungry to learn much more.",

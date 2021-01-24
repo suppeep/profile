@@ -9,7 +9,7 @@
   >
     {{ snackWithBtnText }}
     <v-spacer/>
-    <v-btn flat :color="color" @click.native="refresh" class="dashed">{{ snackBtnText }}</v-btn>
+    <v-btn text :color="color" @click.native="refresh" class="dashed">{{ snackBtnText }}</v-btn>
     <v-btn icon @click="closeSnackBar">
       <v-icon>close</v-icon>
     </v-btn>

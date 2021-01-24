@@ -11,9 +11,9 @@
       :snackWithBtnText="snackWithBtnText"
       :snackBtnText="snackBtnText"
     />
-    <v-content>
+    <v-main>
       <router-view v-transition @after-leave="afterLeave" />
-    </v-content>
+    </v-main>
     <app-footer />
     <social-sharing></social-sharing>
   </v-app>

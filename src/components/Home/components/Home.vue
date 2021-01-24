@@ -9,7 +9,7 @@
           </mark>
         </div>
       </transition>
-      <v-card id="home" flat class="text-xs-center white p_t p_b">
+      <v-card id="home" flat class="text-center white p_t p_b">
         <v-card-text>
           <h1 class="img-view-title" v-html="$t('home.title')"></h1>
         </v-card-text>
@@ -18,7 +18,7 @@
         </v-card-text>
         <v-card-text>
           <router-link :to="{ name: 'me' }">
-            <v-btn outline class="my_own--text">{{ $t('home.action.me') }}</v-btn>
+            <v-btn outlined class="my_own--text">{{ $t('home.action.me') }}</v-btn>
           </router-link>
         </v-card-text>
       </v-card>
@@ -58,7 +58,7 @@
         <v-card-text>
           <h2 class="mb-1 mt-5">{{ $t('home.learned') }}</h2>
         </v-card-text>
-        <v-card-text>
+        <v-card-text class="text-center">
           <p class="header-under mb-5 mt-0">{{ $t('home.learned_sub') }}</p>
         </v-card-text>
         <v-layout row wrap>
@@ -104,13 +104,13 @@
         <v-card-text>
           <h2 class="mb-1">{{ $t('home.more') }}</h2>
         </v-card-text>
-        <v-card-text>
+        <v-card-text class="text-center">
           <p class="header-under mb-5">{{ $t('home.more_sub') }}</p>
         </v-card-text>
 
         <v-container fluid grid-list-xl>
           <v-layout row justify-center wrap>
-            <v-flex class="ma-2" v-for="i in mCard3" :key="i.title" lg2 md3 sm4 xs10>
+            <v-flex class="ma-2" v-for="i in mCard3" :key="i.title" xl3 lg2 md3 sm4 xs10>
               <main-card
                 v-animate="'fade'"
                 class="pt-5 li"
@@ -189,7 +189,7 @@ export default {
   left: 50%;
   border-radius: 4px;
   margin-right: -50%;
-  transform: translate(-50%, -112%);
+  transform: translate(-50%, -85%);
 }
 .swipe-menu mark {
   background: #f6c180;

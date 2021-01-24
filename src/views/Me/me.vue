@@ -1,41 +1,62 @@
 <template>
   <v-layout row wrap>
     <v-flex xs12 class="pa-0">
-      <v-card id="me" flat class="text-xs-center mb-3">
+      <v-card id="me" flat class="text-center mb-3">
         <v-card-text>
-          <h4>{{ $t('me.head') }}</h4>
+          <h4>{{ $t("me.head") }}</h4>
         </v-card-text>
         <v-card-text class="color-me-text">
           <h1 v-html="$t('me.title')"></h1>
         </v-card-text>
         <v-card-text>
-          <p class="black--text">{{ $t('me.sub') }}</p>
+          <p class="black--text">{{ $t("me.sub") }}</p>
         </v-card-text>
       </v-card>
 
       <v-layout row wrap>
         <v-flex xs12>
-          <v-card flat class="text-xs-left color-me">
+          <v-card flat class="text-left color-me">
             <v-layout row wrap>
-              <v-flex xl4 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
+              <v-flex
+                xl4
+                offset-xl3
+                lg5
+                offset-lg2
+                md5
+                offset-md1
+                sm6
+                offset-sm1
+              >
                 <v-card class="transparent" id="me_" flat>
                   <v-card-text>
-                    <h3 class="mt-0 white--text display-1">{{ $t('me.descr') }}</h3>
+                    <h3 class="mt-0 white--text display-1">
+                      {{ $t("me.descr") }}
+                    </h3>
                   </v-card-text>
                   <v-card-text>
-                    <p class="text-xs-left white--text mt-4">{{ $t('me.descr_sub') }}</p>
+                    <p class="text-left white--text mt-4">
+                      {{ $t("me.descr_sub") }}
+                    </p>
                   </v-card-text>
                   <v-card-text>
-                    <h3 class="mt-0 white--text display-1">{{ $t('me.skills') }}</h3>
+                    <h3 class="mt-0 white--text display-1">
+                      {{ $t("me.skills") }}
+                    </h3>
                     <div class="mt-3">
-                      <v-flex class="py-1" xs12 v-for="text in plus" :key="text.text">
+                      <v-flex
+                        class="py-2"
+                        xs12
+                        v-for="text in plus"
+                        :key="text.text"
+                      >
                         <span class="subheading">
                           <v-icon
                             style="line-height: 0.9"
                             size="20"
-                            class="red--text text--accent-3 mr-1"
-                          >fas fa-plus</v-icon>
-                          {{text}}
+                            class="blue--text text--accent-3 mr-1"
+                            >mdi-check</v-icon
+                          >
+                          {{ text }}
                         </span>
                       </v-flex>
                     </div>
@@ -47,11 +68,15 @@
                 </div>
                 <div class="mx-2 my-5">
                   <h3 class="mt-0 white--text display-1">LinkedIn</h3>
-                  <a class="my_own--text" href="https://www.linkedin.com/in/luaks52523/">Lukas Kreutzer</a>
+                  <a
+                    class="my_own--text"
+                    href="https://www.linkedin.com/in/luaks52523/"
+                    >Lukas Kreutzer</a
+                  >
                 </div>
               </v-flex>
             </v-layout>
-            <banner title="See my latest works" route="job" text="My work" />
+            <banner style="margin-bottom: 40px" title="See my latest works" route="job" text="My work" />
           </v-card>
         </v-flex>
       </v-layout>
@@ -60,7 +85,7 @@
 </template>
 
 <script>
-import banner from "../../components/Cards/components/banner";
+import banner from "@/components/Cards/components/banner";
 import githubData from "./components/github";
 import axios from "axios";
 
@@ -68,7 +93,7 @@ export default {
   name: "job",
   components: {
     banner,
-    githubData
+    githubData,
   },
   data() {
     return {
@@ -79,11 +104,11 @@ export default {
         "Nodejs",
         "Typescript",
         "VueJs | Vuex",
+        "React | React Native",
+        "Electron JS",
         "Vuetifyjs",
         "Nuxtjs",
         "Git",
-        "Github",
-        "Gitlab",
         "NPM",
         "Google Cloud Platform",
         "Firebase",
@@ -91,30 +116,27 @@ export default {
         "Progressive Web App (Pwa)",
         "Single page application (Spa)",
         "Wordpress",
-        "..."
-      ]
+        "C#",
+        "Razor Pages",
+      ],
     };
   },
   computed: {
     allData() {
       return this.userData;
-    }
+    },
   },
   methods: {
     async getGithubData() {
-      let data = await axios
-        .get("https://api.github.com/users/suppeep")
-        .then(res => {
-          this.userData.push(res.data);
-        })
-        .catch(err => {
-          // console.log(err);
-        });
-    }
+      try {
+        const res = await axios.get("https://api.github.com/users/suppeep");
+        this.userData.push(res.data);
+      } catch (err) {}
+    },
   },
   mounted() {
     this.getGithubData();
-  }
+  },
 };
 </script>
 
@@ -126,12 +148,12 @@ a {
   background: #eecda3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right bottom,
-    #081B33,
+    #081b33,
     #0c0c0d
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right bottom,
-    #081B33,
+    #081b33,
     #0c0c0d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

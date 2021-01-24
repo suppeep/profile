@@ -1,10 +1,8 @@
-import '@babel/polyfill';
-// import vue
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import './plugins/vuetify';
+import vuetify from './plugins/vuetify';
 import './firebase/index.js';
 import './style/main.scss';
 import './registerServiceWorker';
@@ -20,8 +18,8 @@ Vue.use(vueTouch2)
 
 // to save scrolling position
 Vue.use(vueScrollBehavior, {
-  router: router,
-  maxLength: 100
+    router: router,
+    maxLength: 100
 })
 
 // TEST MODE
@@ -31,24 +29,26 @@ Vue.use(VueAnimate)
 
 // for vueg for page transition
 const options = {
-  duration: '0.4',
-  firstEntryDisable: false,
-  firstEntryDuration: '.1',
-  forwardAnim: 'bounceInLeft',
-  backAnim: 'fadeIn',
-  sameDepthDisable: true,
-  shadow: true,
-  disable: false,
-  nuxt: false,
+    duration: '0.4',
+    firstEntryDisable: false,
+    firstEntryDuration: '.1',
+    forwardAnim: 'bounceInLeft',
+    backAnim: 'fadeIn',
+    sameDepthDisable: true,
+    shadow: true,
+    disable: false,
+    nuxt: false,
 };
 Vue.use(vueg, router, options);
 
 Vue.config.productionTip = false;
 
 const i18n = vuei18n.i18n;
+
 new Vue({
-  i18n,
-  router,
-  store,
-  render: h => h(App),
+    vuetify,
+    i18n,
+    router,
+    store,
+    render: h => h(App),
 }).$mount('#app');

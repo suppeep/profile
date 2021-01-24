@@ -1,32 +1,51 @@
 <template>
   <div>
-    <v-navigation-drawer id="drawye" v-model="drawer" fixed clipped class="my_own" app>
+    <v-navigation-drawer
+      id="drawye"
+      v-model="drawer"
+      fixed
+      clipped
+      class="my_own"
+      app
+    >
       <v-list dark class="my_own">
         <template v-for="(item, i) in l_items.items">
-          <router-link :to="{ name: item.name, params: { locale: 'en' } }" :key="item.link">
-            <v-list-tile :key="i">
-              <v-list-tile-action>
+          <router-link
+            :to="{ name: item.name, params: { locale: 'en' } }"
+            :key="item.link"
+          >
+            <v-list-item :key="i">
+              <v-list-item-action>
                 <v-icon>{{ item.icon }}</v-icon>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title class="white--text">{{ item.title }}</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title class="white--text">{{
+                  item.title
+                }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
           </router-link>
         </template>
-        <v-layout row>
+        <!-- <v-layout row>
           <v-flex xs3>
             <v-icon right class="my-2">fas fa-globe-americas</v-icon>
           </v-flex>
           <v-flex xs9>
             <select v-model="$i18n.locale">
-              <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
+              <option
+                v-for="(lang, i) in langs"
+                :key="`Lang${i}`"
+                :value="lang"
+              >
+                {{ lang }}
+              </option>
             </select>
           </v-flex>
-        </v-layout>
+        </v-layout> -->
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar
+
+    <v-app-bar
       v-touch:swipe.right="swipe"
       scroll-off-screen
       class="shadow_l"
@@ -35,12 +54,20 @@
       fixed
       clipped-left
     >
-      <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-app-bar-nav-icon
+        class="hidden-md-and-up"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
+
       <v-layout align-center justify-center row fill-height>
         <v-flex xs12>
           <router-link :to="{ name: 'home', params: { locale: 'en' } }">
             <div class="logo-masterdoom my_own--text">Lukas Kreutzer</div>
-            <v-img class="logo_h" src="../../../../public/img/icons/icon-512x512.png" alt/>
+            <v-img
+              class="logo_h"
+              src="../../../../public/img/icons/icon-512x512.png"
+              alt
+            />
           </router-link>
         </v-flex>
       </v-layout>
@@ -53,10 +80,11 @@
           class="text-capitalize font-weight-regular"
           v-for="i in l_items.itemsNav"
           :key="i.text"
-          flat
-        >{{ i.text }}</v-btn>
+          text
+          >{{ i.text }}</v-btn
+        >
       </v-toolbar-items>
-    </v-toolbar>
+    </v-app-bar>
   </div>
 </template>
 
@@ -65,7 +93,7 @@ export default {
   data() {
     return {
       langs: ["en", "de"],
-      drawer: false
+      drawer: false,
     };
   },
   computed: {
@@ -77,27 +105,27 @@ export default {
           {
             icon: "fas fa-briefcase",
             title: this.$t("header.job"),
-            name: "job"
+            name: "job",
           },
           {
             icon: "fas fa-heart",
             title: this.$t("header.passion"),
-            name: "passion"
+            name: "passion",
           },
           {
             icon: "far fa-id-badge",
             title: this.$t("header.addTo"),
-            name: "addTo"
-          }
+            name: "addTo",
+          },
         ],
         itemsNav: [
           { text: this.$t("header.me"), name: "me" },
           { text: this.$t("header.job"), name: "job" },
           { text: this.$t("header.passion"), name: "passion" },
-          { text: this.$t("header.addTo"), name: "addTo" }
-        ]
+          { text: this.$t("header.addTo"), name: "addTo" },
+        ],
       };
-    }
+    },
   },
   methods: {
     open() {
@@ -105,15 +133,15 @@ export default {
     },
     swipe() {
       this.open();
-    }
+    },
   },
   mounted() {
-    document.addEventListener("keydown", e => {
+    document.addEventListener("keydown", (e) => {
       if (e && e.keyCode == 27) {
         this.drawer = !this.drawer;
       }
     });
-  }
+  },
 };
 </script>
 

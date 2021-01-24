@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap>
     <v-flex xs12 class="pa-0">
-      <v-card id="passion" flat class="text-xs-center mb-3">
+      <v-card id="passion" flat class="text-center mb-3">
         <v-card-text>
           <h4>{{ $t('passion.head') }}</h4>
         </v-card-text>
@@ -15,7 +15,7 @@
 
       <v-layout row wrap>
         <v-flex xs12>
-          <v-card dark flat class="text-xs-left passion_c color-passion">
+          <v-card dark flat class="text-left passion_c color-passion">
             <v-layout row wrap>
               <v-flex xl4 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card
@@ -50,7 +50,7 @@
                     <div class="py-3">
                       <h2
                         :style="{ color: year.color }"
-                        :class="`headline text-xs-left font-weight-light mb-3`"
+                        :class="`headline text-left font-weight-light mb-3`"
                       >{{ year.title }}</h2>
                       <div>{{ year.text }}</div>
                     </div>
@@ -58,7 +58,7 @@
                 </v-timeline>
               </v-flex>
             </template>
-            <banner style="background: #fff" title="See my latest works" route="job" text="My work" />
+            <banner style="margin-bottom: 40px" class="white" title="See my latest works" route="job" text="My work" />
           </v-card>
         </v-flex>
       </v-layout>

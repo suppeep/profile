@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap>
     <v-flex xs12>
-      <v-card id="addTo" flat class="text-xs-center mb-3">
+      <v-card id="addTo" flat class="text-center mb-3">
         <v-card-text>
           <h4>{{ $t('addTo.head') }}</h4>
         </v-card-text>
@@ -19,7 +19,7 @@
             <v-layout align-center justify-center row fill-height>
               <v-flex xl12 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card-text>
-                  <p v-html="$t('addTo.card1.title')" class="text-xs-left white--text"></p>
+                  <p v-html="$t('addTo.card1.title')" class="text-left white--text"></p>
                 </v-card-text>
                 <v-card-text>
                   <div class="subheading">
@@ -41,7 +41,7 @@
             <v-layout align-center justify-center row fill-height>
               <v-flex xl12 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card-text class="mt-5">
-                  <p class="text-xs-left white--text">
+                  <p class="text-left white--text">
                     How to Bookmark to Home Screen at
                     <mark>iOS:</mark>
                   </p>
@@ -66,7 +66,7 @@
             <v-layout class="p_b" align-center justify-center row fill-height>
               <v-flex xl12 offset-xl3 lg5 offset-lg2 md5 offset-md1 sm6 offset-sm1>
                 <v-card-text class="mt-5">
-                  <p class="text-xs-left white--text">
+                  <p class="text-left white--text">
                     How to Bookmark to Home Screen at
                     <mark>Firefox:</mark>
                   </p>
@@ -86,7 +86,7 @@
               </v-flex>
               <v-flex v-if="onMobile" xs12 md1></v-flex>
             </v-layout>
-            <banner title="See my latest works" route="job" text="My work" />
+            <banner style="margin-bottom: 40px" title="See my latest works" route="job" text="My work" />
           </v-card>
         </v-flex>
       </v-layout>
@@ -96,6 +96,7 @@
 
 <script>
 import banner from "@/components/Cards/components/banner";
+
 export default {
   name: "add-to",
   components: {
